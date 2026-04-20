@@ -66,8 +66,6 @@ app.get('/', (req, res) => {
 // Get all services
 app.get('/api/services', (req, res) => {
   res.json({
-    success: true,
-    count: servicesData.length,
     services: servicesData
   });
 });

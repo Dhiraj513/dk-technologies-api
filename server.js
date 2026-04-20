@@ -66,7 +66,7 @@ app.get('/', (req, res) => {
 // Get all services
 app.get('/api/services', (req, res) => {
   res.json({
-    services: servicesData
+     servicesData
   });
 });
 

@@ -76,10 +76,9 @@ app.get('/api/services/:id', (req, res) => {
   const service = servicesData.find(s => s.id === serviceId);
 
   if (service) {
-    res.json({
-      success: true,
+    res.json(
       service
-    });
+    );
   } else {
     res.status(404).json({
       success: false,

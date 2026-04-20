@@ -65,9 +65,9 @@ app.get('/', (req, res) => {
 
 // Get all services
 app.get('/api/services', (req, res) => {
-  res.json({
+  res.json(
      servicesData
-  });
+  );
 });
 
 // Get single service by ID
